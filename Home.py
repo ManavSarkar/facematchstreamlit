@@ -75,6 +75,9 @@ def main():
 
     with tab2:
         upload_file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
+        # display uploaded image
+        if upload_file is not None:
+            st.image(upload_file, caption="Your Image", use_container_width =True)
 
     if upload_file is not None:
         image = upload_file
