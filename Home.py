@@ -59,6 +59,7 @@ def process_image(image_base64):
 
 # Streamlit app
 def main():
+    st.set_page_config(page_title="Celebrity Prediction App", page_icon=":guardsman:", layout="wide")
     st.title("Celebrity Prediction App")
     st.subheader("Check if your face matches with your favorite celebrity!")
 
